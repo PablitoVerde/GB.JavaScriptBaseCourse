@@ -26,41 +26,39 @@
 
         switch (c) {
             case "+":
-                alert(Add(a, b));
+                alert(add(a, b));
                 break;
             case "-":
 
-                alert(Subtract(a, b));
+                alert(subtract(a, b));
                 break;
             case "*":
-                alert(Multiplicate(a, b));
+                alert(multiplicate(a, b));
                 break;
             case "/":
-                alert(Divide(a, b));
+                alert(divide(a, b));
                 break;
             default:
                 alert("Операция не найдена");
         }
 
-        function Add(number1, number2) {
-            return (number1 + number2);
+        function add(number1, number2) {
+            return number1 + number2;
         }
 
-        function Subtract(number1, number2) {
-            return (number1 - number2);
+        function subtract(number1, number2) {
+            return number1 - number2;
         }
 
-        function Multiplicate(number1, number2) {
-            return (number1 * number2);
+        function multiplicate(number1, number2) {
+            return number1 * number2;
         }
 
-        function Divide(number1, number2) {
+        function divide(number1, number2) {
             if (number2 == 0) {
-                return ("На ноль делить нельзя!");
+                return "На ноль делить нельзя!";
             }
-            else {
-                return (number1 / number2);
-            }
+            return number1 / number2;
         }
     </script>
 </body>

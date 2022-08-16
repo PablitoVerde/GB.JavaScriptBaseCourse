@@ -21,30 +21,28 @@
         let a = Number(prompt("Введите число а:"));
         let b = Number(prompt("Введите число b:"));
 
-        alert(Add(a, b));
-        alert(Subtract(a, b));
-        alert(Multiplicate(a, b));
-        alert(Divide(a, b));
+        alert(add(a, b));
+        alert(subtract(a, b));
+        alert(multiplicate(a, b));
+        alert(divide(a, b));
 
-        function Add(number1, number2) {
-            return (number1 + number2);
+        function add(number1, number2) {
+            return number1 + number2;
         }
 
-        function Subtract(number1, number2) {
-            return (number1 - number2);
+        function subtract(number1, number2) {
+            return number1 - number2;
         }
 
-        function Multiplicate(number1, number2) {
-            return (number1 * number2);
+        function multiplicate(number1, number2) {
+            return number1 * number2;
         }
 
-        function Divide(number1, number2) {
+        function divide(number1, number2) {
             if (number2 == 0) {
-                return ("На ноль делить нельзя!");
+                return "На ноль делить нельзя!";
             }
-            else {
-                return (number1 / number2);
-            }
+            return (number1 / number2);
         }
     </script>
 </body>
